@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400');
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 a {
     text-decoration: none;
@@ -82,48 +74,6 @@ header {
 .overlay-menu {
     line-height: 2.8em;
 }
-
-
-
-
-
-/*//////////////home page///////////////////////*/
-
-
-body {
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
-}
-
-article {
-    border-radius: 10px;
-
-}
-
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 2em;
-    grid-gap: 3em;
-}
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    font-weight: 100;
-    text-transform: lowercase;
-    border-bottom: .4px solid #cbcbcb;
-}
-
-h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 100;
-    text-transform: capitalize;
-}
-
-
-/*/////////////////flip card /////////////////*/
 
 
 
