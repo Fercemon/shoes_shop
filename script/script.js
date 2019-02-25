@@ -16,3 +16,18 @@ function displayData(data) {
 }
 
 loadJSON(link);
+
+
+//button to get the overlay menu
+
+document.querySelector("#menu").addEventListener("click", openNav); //get the menu button and add event listener
+
+function openNav() {
+    document.querySelector(".overlay").style.height = "100vh"; // when click on menu button set the overlay heigh to 100vh
+}
+
+document.querySelector(".overlay-menu").addEventListener("click", closeNav);
+
+function closeNav() {
+    document.querySelector(".overlay").style.height =0; // when click on menu button set the overlay heigh to 0
+}
