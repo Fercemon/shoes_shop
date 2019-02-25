@@ -21,6 +21,7 @@ header {
     background-position: bottom;
     height: 15em;
     width: 100%;
+    position: relative;
 }
 
 .mobile-nav {
@@ -48,6 +49,20 @@ header {
 }
 
 
+.quote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 5vw;
+    color: red;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    padding: 0 2em;
+}
+
+
 .overlay {
     position: fixed;
     top: 0;
@@ -69,6 +84,11 @@ header {
     font-size: 1.3em;
     border-bottom: 1px solid #fff;
 }
+
+.overlay-content a:hover{
+    color: #ddd;
+}
+
 
 .overlay-header {
     background: #fff;
@@ -104,7 +124,7 @@ section{
     margin: 2em;
 }
 
-h1 {
+template h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     font-weight: 100;
@@ -112,7 +132,7 @@ h1 {
     border-bottom: .4px solid #cbcbcb;
 }
 
-h2{
+template h2{
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     font-weight: 100;
