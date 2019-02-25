@@ -1,5 +1,5 @@
 .header {
-	background-image: url(./legs.jpg);
+	background-image: url(../gfx/legs.jpg);
 	height: 310px;
 }
 
@@ -72,7 +72,7 @@
 
 @media only screen and (min-width: 600px) {
 	.header {
-		background-image: url(./legs2.jpg);
+		background-image: url(../gfx/legs2.jpg);
 		height: 620px;
 	}
 }

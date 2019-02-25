@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoes shop</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shoes shop</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/shoes.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
-<main>
-    <section></section>
-</main>
-
-<template>
-    <article>
-        <h2>MODEL</h2>
-        <img src="IMG" alt="">
-        <h3>PRICE</h2>
-        <div>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-
-    </article>
-</template>
-
 <body>
-    <script src="script/script.js"></script>
+	<!-- Simulate a smartphone / tablet -->
+	<div class="mobile-container">
+
+		<!-- Top Navigation Menu -->
+		<div class="header">
+			<div class="topnav">
+				<img class="logo" src="gfx/logo-shoes2.png" alt="logo">
+				<div id="myLinks">
+					<a href="shoes">SHOES</a>
+					<a href="#contact">CONTACT</a>
+					<a href="#about">ABOUT</a>
+				</div>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+
+			<div class="text">THE COLLECTION OF SNEAKERS FROM 2013 TO 2018</div>
+		</div>
+	</div>
+	<main>
+		<section></section>
+	</main>
+
+	<template>
+		<article>
+			<h2>MODEL</h2>
+			<img src="IMG" alt="">
+			<h3>PRICE</h2>
+				<div>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+
+		</article>
+	</template>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+
+	</script>
+
+	<script src="script/script.js"></script>
 </body>
+
 </html>
