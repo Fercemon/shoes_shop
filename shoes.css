@@ -1,0 +1,78 @@
+.header {
+	background-image: url(./legs.jpg);
+	height: 310px;
+}
+
+.mobile-container {
+
+	margin: auto;
+
+	height: 600px;
+	color: white;
+
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+
+.topnav #myLinks {
+	display: none;
+}
+
+.topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+	text-align: center;
+	color: white;
+
+}
+
+.topnav a.icon {
+
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.topnav a:hover {
+	0 background-color: #ddd;
+	color: black;
+}
+
+.active {
+	background-color: darkgray;
+	color: white;
+}
+
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 25px;
+	color: red;
+	font-weight: bold;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+	.header {
+		background-image: url(./legs2.jpg);
+		height: 620px;
+	}
+}
