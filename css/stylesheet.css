@@ -120,13 +120,13 @@ article{
 section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 3em;
+    grid-gap: 4em;
     margin: 2em;
 }
 
 template h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 100;
     text-transform: lowercase;
     border-bottom: .4px solid #cbcbcb;

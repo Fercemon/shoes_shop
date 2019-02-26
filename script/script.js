@@ -2,6 +2,7 @@ const link = "https://spreadsheets.google.com/feeds/list/1FRZSnd9BuKCG4fpcLk6EvS
 const section = document.querySelector("section");
 const template = document.querySelector("template").content;
 
+
 function loadJSON(link) {
     fetch(link).then(e=>e.json()).then(data=>data.feed.entry.forEach(displayData));
 }
@@ -10,12 +11,15 @@ function displayData(data) {
     const clone = template.cloneNode("true");
 
     clone.querySelector("h2").textContent =data.gsx$model.$t;
+    clone.querySelector("h1").textContent =data.gsx$brand.$t;
+    clone.querySelector(".year").textContent =data.gsx$year.$t;
+    clone.querySelector(".model").textContent =data.gsx$model.$t;
     clone.querySelector("h3").textContent =data.gsx$price.$t + ", -kr";
 
     section.appendChild(clone);
 }
 
-loadJSON(link);
+loadJSON(link); //we call the function to make it run
 
 
 //button to get the overlay menu
