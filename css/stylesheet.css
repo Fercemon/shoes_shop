@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,7 +49,7 @@ header {
 }
 
 
-.quote{
+.quote {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,7 +85,7 @@ header {
     border-bottom: 1px solid #fff;
 }
 
-.overlay-content a:hover{
+.overlay-content a:hover {
     color: #ddd;
 }
 
@@ -107,17 +107,17 @@ header {
 /*//////home page//////////////////*/
 
 
-body{
+body {
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 
-article{
+article {
     border-radius: 10px;
 
 }
 
-section{
+section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 4em;
@@ -132,7 +132,7 @@ template h1 {
     border-bottom: .4px solid #cbcbcb;
 }
 
-template h2{
+template h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     font-weight: 100;
@@ -143,22 +143,22 @@ template h2{
 
 
 .flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
     position: relative;
 
 }
 
 .flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 
@@ -173,42 +173,44 @@ template h2{
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
-  z-index: 2;
+    background-color: #bbb;
+    color: black;
+    z-index: 2;
 }
 
 .flip-card-back {
-  background-color: #ffffff;
-  color: black;
-  font-weight: 100;
-  transform: rotateY(180deg);
-  z-index: 1;
+    background-color: #ffffff;
+    color: black;
+    font-weight: 100;
+    transform: rotateY(180deg);
+    z-index: 1;
 }
 
 /* FOOTER style */
 
 footer {
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: grey;
-  color: white;
-  text-align: center;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
 
 }
+
 .icon1 {
     width: 60px;
     height: 40px;
@@ -216,6 +218,7 @@ footer {
     padding-left: 10px;
     margin-bottom: 10px;
 }
+
 .icon2 {
     width: 55px;
     height: 35px;
@@ -226,41 +229,79 @@ footer {
 
 /* go TOP button */
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: darkgrey; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: darkgrey;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #555;
+    /* Add a dark-grey background on hover */
 }
 
 
+/* HOME PAGE IMGS */
 
 
+.container {
+    position: relative;
 
+}
 
+.home_img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
 
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
 
+.container: hover .home_img {
+    opacity: 0.3;
+}
 
+.container:hover .middle {
+    opacity: 1;
+}
 
-
-
-
-
-
-
-
-
-
-
+.text {
+    background-color: dimgrey;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
