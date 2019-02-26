@@ -2,78 +2,81 @@
 <html lang="">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shoes shop</title>
-	<link rel="stylesheet" href="css/stylesheet.css">
-	<link rel="stylesheet" href="css/shoes.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes shop</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/shoes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header>
 
-  <header>
+        <nav class="mobile-nav">
+            <img class="logo" src="img/logo.png" alt="sneakers logo">
+            <a href="#" class="menu" id="menu">&#9776;</a>
+        </nav>
 
-      <nav class="mobile-nav">
-         <img class="logo" src="img/logo.png" alt="sneakers logo">
-          <a href="#" class="menu" id="menu">&#9776;</a>
-      </nav>
+        <p class="quote">THE COLLECTION OF SNEAKERS FROM 2013 TO 2018</p>
 
-      <p class="quote">THE COLLECTION OF SNEAKERS FROM 2013 TO 2018</p>
+        <div class="overlay">
+            <nav class="overlay-header">
+                <img class="overlay-logo" src="img/logo.png" alt="sneakers logo">
+                <a href="#" class="menu overlay-menu">&#9776;</a>
+            </nav>
 
-      <div class="overlay">
-         <nav class="overlay-header">
-            <img class="overlay-logo" src="img/logo.png" alt="sneakers logo">
-             <a href="#" class="menu overlay-menu">&#9776;</a>
-         </nav>
-
-          <div class="overlay-content">
-              <a href="#">RUNNING</a>
-              <a href="#">FITNESS</a>
-              <a href="#">FOOTBALL</a>
-              <a href="#">BASKETBALL</a>
-              <a href="#">ALL</a>
-          </div>
-      </div>
-
-  </header>
-
-  <main>
-    <section></section>
-</main>
-
-  <!--Flip Card  start-->
-<template>
-     <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="img/ultraboost_side.jpg" alt="imgName" style="width:300px;height:300px;" class="image">
-          <p class="year">year</p>
-           <h1>MODEL</h1>
-          <p class="model">year</p>
+            <div class="overlay-content">
+                <a href="#">RUNNING</a>
+                <a href="#">FITNESS</a>
+                <a href="#">FOOTBALL</a>
+                <a href="#">BASKETBALL</a>
+                <a href="#">ALL</a>
+            </div>
         </div>
-           <article>
-                <div class="flip-card-back">
-                    <h2>MODEL</h2>
-                    <img src="IMG" alt="">
-                    <h3>PRICE</h2>
-                        <div>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+
+    </header>
+
+    <main>
+        <section></section>
+    </main>
+
+    <!--Flip Card  start-->
+    <template>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="img/ultraboost_side.jpg" alt="imgName" style="width:300px;height:300px;" class="image">
+                    <p class="year">year</p>
+                    <h1>MODEL</h1>
+                    <p class="model">year</p>
                 </div>
-            </article>
-      </div>
+                <article>
+                    <div class="flip-card-back">
+                        <h2>MODEL</h2>
+                        <img src="IMG" alt="">
+                        <h3>PRICE</h2>
+                            <div>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                    </div>
+                </article>
+            </div>
         </div>
 
-</template>
+    </template>
 
-<!--Flip Card  end-->
-
-	<script src="script/script.js"></script>
+    <!--Flip Card  end-->
+    <footer>
+        <p>FOLLOW US ON :</p>
+        <img class="icon1" src="fb.png"> <img class="icon2" src="instagram-logo.png">
+    </footer>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
