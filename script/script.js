@@ -63,6 +63,7 @@ function loadJSON(link) {
     fetch(link).then(e => e.json()).then(data => {
         creatCategory(data.feed.entry)
         data.feed.entry.forEach(displayData)
+        //order(data.feed.entry);
     });
 }
 
@@ -77,6 +78,8 @@ function displayData(data) {
     clone.querySelector(".model").textContent = data.gsx$model.$t;
     clone.querySelector("h3").textContent = data.gsx$price.$t + ", -kr";
     clone.querySelector(".flip-card").id = data.gsx$use.$t;
+    clone.querySelector(".stars-inner").style.width = (data.gsx$rate.$t / 5)*100 + "%";
+
 
 
     main.appendChild(clone);
@@ -85,8 +88,16 @@ function displayData(data) {
 loadJSON(link); //we call the function to make it run
 
 
+// to call the function sort() when click
 
+document.querySelector(".filter").addEventListener("click", order);
 
+// to sort the data by ascendent price
+
+function order(years){
+       years.sort((a, b) => a - b);
+ console.log(years);
+}
 
 
 //button to get the overlay menu
