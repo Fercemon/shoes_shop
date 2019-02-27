@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <header>
 
         <nav class="mobile-nav">
@@ -19,7 +19,7 @@
             <a href="#" class="menu" id="menu">&#9776;</a>
         </nav>
 
-        <p class="quote">THE COLLECTION OF SNEAKERS FROM 2013 TO 2018</p>
+        <p class="quote">CATALOG OF THE BEST SNEAKERS FROM 2013 TO 2017</p>
 
         <div class="overlay">
             <nav class="overlay-header">
@@ -28,26 +28,35 @@
             </nav>
 
             <div class="overlay-content">
-                <a href="#">RUNNING</a>
-                <a href="#">FITNESS</a>
-                <a href="#">FOOTBALL</a>
-                <a href="#">BASKETBALL</a>
-                <a href="#">ALL</a>
+                <a href="#">all</a>
+
             </div>
         </div>
 
     </header>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="filter"><button><i class="fas fa-filter"></i> filter</button>
+    </div>
+
+    <nav class="use-nav">
+        <div id="all">
+            <a href="#running">all</a>
+        </div>
+    </nav>
+
     <main>
-        <section></section>
+
+
     </main>
 
     <!--Flip Card  start-->
     <template>
-        <div class="flip-card">
+        <section class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="img/ultraboost_side.jpg" alt="imgName" style="width:300px;height:300px;" class="image">
+                    <img src="IMG" alt="sneaker side view" style="width:250px;height:250px;" class="image">
                     <p class="year">year</p>
                     <h1>MODEL</h1>
                     <p class="model">year</p>
@@ -55,7 +64,7 @@
                 <article>
                     <div class="flip-card-back">
                         <h2>MODEL</h2>
-                        <img src="IMG" alt="">
+                        <img src="IMG" alt="sneaker top view" style="width:250px;height:250px;">
                         <h3>PRICE</h2>
                             <div>
                                 <i class="fas fa-star"></i>
@@ -67,7 +76,7 @@
                     </div>
                 </article>
             </div>
-        </div>
+        </section>
 
     </template>
 

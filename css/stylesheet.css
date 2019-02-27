@@ -79,7 +79,7 @@ header {
 .overlay-content a {
     display: block;
     text-align: center;
-    padding: 2.3em 0;
+    padding: 1.75em 0;
     color: #fff;
     font-size: 1.3em;
     border-bottom: 1px solid #fff;
@@ -112,17 +112,31 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-article{
-    border-radius: 10px;
+
+.filer{
+    width: 100%;
+    height: 2em;
+    background: transparent;
 
 }
 
-section{
+.filter button{
+    background: transparent;
+    border: none;
+    line-height: 2em;
+    display: block;
+    margin: auto 2em;
+}
+
+
+main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1em;
     margin: 2em;
 }
+
+
 
 template h1 {
     font-family: 'Roboto', sans-serif;
@@ -139,13 +153,47 @@ template h2{
     text-transform: capitalize;
 }
 
+article{
+    border-radius: 10px;
+
+}
+
+/*/////////////// use nav ////////////*/
 
 
+.use-nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 1em;
+    margin: 2em;
+    text-align: center;
+}
+
+.use-nav div{
+    color: #fff;
+    padding: 4em 0;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.use-nav a{
+    color: #fff;
+}
+
+#all{
+    background-image: url(../img/all.jpg);
+}
+
+
+
+
+
+/*////////////////flip card ////////////*/
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 360px;
   perspective: 1000px;
     position: relative;
 
@@ -184,7 +232,7 @@ template h2{
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: transparent;
   color: black;
   z-index: 2;
 }
@@ -207,18 +255,23 @@ footer {
   background-color: grey;
   color: white;
   text-align: center;
+}
 
+footer p{
+    font-size: 0.8em;
+    font-weight: 200;
+    padding: 0.7em 0;
 }
 .icon1 {
-    width: 60px;
-    height: 40px;
+    width: 3em;
+    height: 2em;
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom: 10px;
 }
 .icon2 {
-    width: 55px;
-    height: 35px;
+    width: 2.7em;
+    height: 1.7em;
     padding-right: 10px;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -243,6 +296,53 @@ footer {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media only screen and (min-width: 700px){
+    header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 25em;
+    width: 100%;
+    position: relative;
+}
+
+.mobile-nav {
+    position: relative;
+    background-color: rgb(0, 0, 0, 0.3);
+    height: 4em;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 15%;
+}
+
+
+.menu {
+    display: none;
+}
+
+.quote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 2vw;
+    color: red;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    padding: 0 2em;
+}
+
+
+
+
 }
 
 
