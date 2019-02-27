@@ -169,15 +169,19 @@ article {
     text-align: center;
 }
 
-.use-nav div {
+
+
+.use-nav a {
     color: #fff;
     padding: 4em 0;
     background-size: cover;
     background-position: bottom;
+    opacity: 0.7;
 }
 
-.use-nav a {
-    color: #fff;
+.use-nav a:hover{
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 #all {

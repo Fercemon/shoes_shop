@@ -2,7 +2,7 @@ const link = "https://spreadsheets.google.com/feeds/list/1FRZSnd9BuKCG4fpcLk6EvS
 const section = document.querySelector("section");
 const main = document.querySelector("main");
 const nav = document.querySelector(".use-nav");
-const all = document.querySelector(".use-nav div");
+const all = document.querySelector(".use-nav a");
 const overlayNav = document.querySelector(".overlay-content");
 const template = document.querySelector("template").content;
 const flipCard = document.querySelectorAll(".flip-card");
@@ -16,33 +16,30 @@ function creatCategory(uses) {
         if (document.querySelector("#" + use.gsx$use.$t + "b")) {
 
         } else {
-            const newDiv = document.createElement("div");
+
             const newA = document.createElement("a");
             const a = document.createElement("a");
+
             newA.textContent = use.gsx$use.$t;
             newA.href = "#" + use.gsx$use.$t;
+            newA.id = use.gsx$use.$t + "b";
+            newA.style.backgroundImage = "url(" + "../img/" + use.gsx$img.$t + ".jpg)";
+            newA.addEventListener("click", () => filter(use.gsx$use.$t));
 
             a.href = "#" + use.gsx$use.$t;
             a.textContent = use.gsx$use.$t;
-
-            newDiv.id = use.gsx$use.$t + "b";
-            newDiv.style.backgroundImage = "url(" + "../img/" + use.gsx$img.$t + ".jpg)";
-            newA.addEventListener("click", () =>filter(use.gsx$use.$t));
-
-
-
-
             a.addEventListener("click", () => {
                 closeNav();
                 filter(use.gsx$use.$t);
             });
 
             overlayNav.appendChild(a);
-            newDiv.appendChild(newA);
-            nav.appendChild(newDiv);
+            nav.appendChild(newA);
         }
     });
 }
+
+
 
 
 function filter(use) {
@@ -63,7 +60,6 @@ function loadJSON(link) {
     fetch(link).then(e => e.json()).then(data => {
         creatCategory(data.feed.entry)
         data.feed.entry.forEach(displayData)
-        //order(data.feed.entry);
     });
 }
 
@@ -75,11 +71,12 @@ function displayData(data) {
     clone.querySelector("img").src = "../img/imgSide/" + data.gsx$imgside.$t + ".jpg";
     clone.querySelector("article img").src = "../img/imgTop/" + data.gsx$imgtop.$t + ".jpg";
     clone.querySelector(".year").textContent = data.gsx$year.$t;
+    clone.querySelector(".year").value = data.gsx$year.$t;
     clone.querySelector(".model").textContent = data.gsx$model.$t;
     clone.querySelector("h3").textContent = data.gsx$price.$t + ", -kr";
     clone.querySelector(".flip-card").id = data.gsx$use.$t;
-    clone.querySelector(".stars-inner").style.width = (data.gsx$rate.$t / 5)*100 + "%";
-
+    clone.querySelector(".stars-inner").style.width = (data.gsx$rate.$t / 5) * 100 + "%"; //to fill the stars depending the rate they have
+    order(data);
 
 
     main.appendChild(clone);
@@ -94,9 +91,10 @@ document.querySelector(".filter").addEventListener("click", order);
 
 // to sort the data by ascendent price
 
-function order(years){
-       years.sort((a, b) => a - b);
- console.log(years);
+function order(years) {
+    const year = years.gsx$year.$t;
+
+    console.log(year);
 }
 
 
