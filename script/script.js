@@ -27,26 +27,21 @@ function creatCategory(uses) {
 
             newDiv.id = use.gsx$use.$t + "b";
             newDiv.style.backgroundImage = "url(" + "../img/" + use.gsx$img.$t + ".jpg)";
-            newA.addEventListener("click", e => {
+            newA.addEventListener("click", () =>filter(use.gsx$use.$t));
 
-                filter(use.gsx$use.$t);
-            });
 
-            a.addEventListener("click", e => {
+
+
+            a.addEventListener("click", () => {
                 closeNav();
                 filter(use.gsx$use.$t);
             });
-
-
 
             overlayNav.appendChild(a);
             newDiv.appendChild(newA);
             nav.appendChild(newDiv);
         }
     });
-
-
-
 }
 
 
@@ -91,6 +86,9 @@ loadJSON(link); //we call the function to make it run
 
 
 
+
+
+
 //button to get the overlay menu
 
 document.querySelector("#menu").addEventListener("click", openNav); //get the menu button and add event listener
@@ -104,6 +102,9 @@ document.querySelector(".overlay-menu").addEventListener("click", closeNav);
 function closeNav() {
     document.querySelector(".overlay").style.height = 0; // when click on menu button set the overlay heigh to 0
 }
+
+
+
 
 // GO TOP script //
 

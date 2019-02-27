@@ -340,7 +340,13 @@ footer p{
     padding: 0 2em;
 }
 
+    main{
+        margin: 2em 5em;
+    }
 
+    .use-nav{
+        margin: 1em 5em;
+    }
 
 
 }
