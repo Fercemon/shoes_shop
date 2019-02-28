@@ -13,6 +13,20 @@ a {
     cursor: pointer;
 }
 
+h1 {
+    font-size: 1.1em;
+
+}
+h2 {
+    font-size: 1em;
+    font-weight: 300;
+
+}
+h3 {
+    font-size: 1em;
+    font-weight: 300;
+}
+
 /*//////// HEADER ///////////////*/
 
 header {
@@ -140,7 +154,7 @@ main {
 
 template h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: .4em;
     font-weight: 100;
     text-transform: lowercase;
     border-bottom: .4px solid #cbcbcb;
@@ -148,7 +162,7 @@ template h1 {
 
 template h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: .4em;
     font-weight: 100;
     text-transform: capitalize;
 }
@@ -217,7 +231,7 @@ article {
 
 .year {
     position: absolute;
-    top: 10%;
+    top: 90%;
     left: 85%;
     transform: translate(-50%, -50%);
     font-weight: 100;
@@ -250,6 +264,26 @@ article {
     z-index: 1;
 }
 
+
+
+.flip-card-front img {
+    max-width: 15em;
+    max-height: 15em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flip-card-back img {
+    max-width: 15em;
+    max-height: 15em;
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*/////////////////////star rating//////////////////*/
 
 i::before {
@@ -260,9 +294,12 @@ i::before {
   -webkit-font-smoothing: antialiased;
 }
 
+
+
 .stars-outer {
     display: inline-block;
     position: relative;
+
 }
 
 .stars-outer::before {
