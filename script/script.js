@@ -68,8 +68,8 @@ function displayData(data) {
 
     clone.querySelector("h2").textContent = data.gsx$model.$t;
     clone.querySelector("h1").textContent = data.gsx$brand.$t;
-    clone.querySelector("img").src = "img/imgside/" + data.gsx$imgside.$t + ".jpg";
-    clone.querySelector("article img").src = "img/imgtop/" + data.gsx$imgtop.$t + ".jpg";
+    clone.querySelector("img").src = "img/imgSide/" + data.gsx$imgside.$t + ".jpg";
+    clone.querySelector("article img").src = "img/imgTop/" + data.gsx$imgtop.$t + ".jpg";
     clone.querySelector(".year").textContent = data.gsx$year.$t;
     clone.querySelector(".year").value = data.gsx$year.$t;
     clone.querySelector(".model").textContent = data.gsx$model.$t;
