@@ -84,7 +84,7 @@ function displayData(data) {
 
 	})
 
-	order(data);
+
 
 
 
