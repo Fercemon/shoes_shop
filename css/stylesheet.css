@@ -2,105 +2,105 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 /*//////// HEADER ///////////////*/
 
 header {
-    background-image: url(../img/header.jpg);
-    background-size: cover;
-    background-position: bottom;
-    height: 15em;
-    width: 100%;
-    position: relative;
+	background-image: url(../img/header.jpg);
+	background-size: cover;
+	background-position: bottom;
+	height: 15em;
+	width: 100%;
+	position: relative;
 }
 
 .mobile-nav {
-    position: relative;
-    background-color: rgb(0, 0, 0, 0.3);
-    height: 4em;
+	position: relative;
+	background-color: rgb(0, 0, 0, 0.3);
+	height: 4em;
 }
 
 .logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40%;
 }
 
 
 .menu {
-    color: #000;
-    float: right;
-    padding-right: 2em;
-    line-height: 3.8em;
-    font-size: 1.2em;
-    font-weight: bold;
+	color: #000;
+	float: right;
+	padding-right: 2em;
+	line-height: 3.8em;
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 
 .quote {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    font-size: 5vw;
-    color: red;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
-    padding: 0 2em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 5vw;
+	color: red;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	padding: 0 2em;
 }
 
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 0;
-    width: 100%;
-    overflow-y: hidden;
-    background: #514E4E;
-    transition: 0.5s;
-    z-index: 3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	overflow-y: hidden;
+	background: #514E4E;
+	transition: 0.5s;
+	z-index: 3;
 }
 
 
 .overlay-content a {
-    display: block;
-    text-align: center;
-    padding: 1.75em 0;
-    color: #fff;
-    font-size: 1.3em;
-    border-bottom: 1px solid #fff;
+	display: block;
+	text-align: center;
+	padding: 1.75em 0;
+	color: #fff;
+	font-size: 1.3em;
+	border-bottom: 1px solid #fff;
 }
 
 .overlay-content a:hover {
-    color: #ddd;
+	color: #ddd;
 }
 
 
 .overlay-header {
-    background: #fff;
-    height: 3em;
+	background: #fff;
+	height: 3em;
 }
 
 .overlay-logo {
-    height: 3em;
+	height: 3em;
 }
 
 .overlay-menu {
-    line-height: 2.8em;
+	line-height: 2.8em;
 }
 
 
@@ -108,53 +108,53 @@ header {
 
 
 body {
-    background-color: #fff;
-    font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
 }
 
 
 .filer {
-    width: 100%;
-    height: 2em;
-    background: transparent;
+	width: 100%;
+	height: 2em;
+	background: transparent;
 
 }
 
 .filter button {
-    background: transparent;
-    border: none;
-    line-height: 2em;
-    display: block;
-    margin: auto 2em;
+	background: transparent;
+	border: none;
+	line-height: 2em;
+	display: block;
+	margin: auto 2em;
 }
 
 
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1em;
-    margin: 2em;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 1em;
+	margin: 2em;
 }
 
 
 
 template h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    font-weight: 100;
-    text-transform: lowercase;
-    border-bottom: .4px solid #cbcbcb;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	text-transform: lowercase;
+	border-bottom: .4px solid #cbcbcb;
 }
 
 template h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    font-weight: 100;
-    text-transform: capitalize;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	font-weight: 100;
+	text-transform: capitalize;
 }
 
 article {
-    border-radius: 10px;
+	border-radius: 10px;
 
 }
 
@@ -162,30 +162,31 @@ article {
 
 
 .use-nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-column-gap: 1em;
-    margin: 2em;
-    text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-column-gap: 1em;
+	margin: 2em;
+	text-align: center;
 }
 
 
 
 .use-nav a {
-    color: #fff;
-    padding: 4em 0;
-    background-size: cover;
-    background-position: bottom;
-    opacity: 0.7;
+	color: #fff;
+	padding: 4em 0;
+	background-size: cover;
+	background-position: bottom;
+	opacity: 0.7;
 }
 
-.use-nav a:hover{
-    opacity: 1;
-    transform: scaleX(1.1);
+.use-nav a:hover {
+	opacity: 1;
+	transform: scale(1.1);
+
 }
 
 #all {
-    background-image: url(../img/all.jpg);
+	background-image: url(../img/all.jpg);
 }
 
 
@@ -195,98 +196,98 @@ article {
 /*////////////////flip card ////////////*/
 
 .flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 360px;
-    perspective: 1000px;
-    position: relative;
+	background-color: transparent;
+	width: 100%;
+	height: 360px;
+	perspective: 1000px;
+	position: relative;
 
 }
 
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 
 
 .year {
-    position: absolute;
-    top: 10%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-    font-weight: 100;
-    font-size: 1.2em;
+	position: absolute;
+	top: 10%;
+	left: 85%;
+	transform: translate(-50%, -50%);
+	font-weight: 100;
+	font-size: 1.2em;
 }
 
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .flip-card-front,
 .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
 }
 
 .flip-card-front {
-    background-color: transparent;
-    color: black;
-    z-index: 2;
+	background-color: transparent;
+	color: black;
+	z-index: 2;
 }
 
 .flip-card-back {
-    background-color: #ffffff;
-    color: black;
-    font-weight: 100;
-    transform: rotateY(180deg);
-    z-index: 1;
+	background-color: #ffffff;
+	color: black;
+	font-weight: 100;
+	transform: rotateY(180deg);
+	z-index: 1;
 }
 
 /*/////////////////////star rating//////////////////*/
 
 i::before {
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
 }
 
 .stars-outer {
-    display: inline-block;
-    position: relative;
+	display: inline-block;
+	position: relative;
 }
 
 .stars-outer::before {
-    font-family: "Font Awesome 5 free";
-    font-weight: 400;
-    content: "\f005 \f005 \f005 \f005 \f005";
+	font-family: "Font Awesome 5 free";
+	font-weight: 400;
+	content: "\f005 \f005 \f005 \f005 \f005";
 
 }
 
 .stars-inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
 }
 
 .stars-inner::before {
-    content: "\f005 \f005 \f005 \f005 \f005";
-    font-family: "Font Awesome 5 Free";
-    color: #f8ce0b;
-    font-style: normal;
-    font-weight: 900;
+	content: "\f005 \f005 \f005 \f005 \f005";
+	font-family: "Font Awesome 5 Free";
+	color: #f8ce0b;
+	font-style: normal;
+	font-weight: 900;
 }
 
 
@@ -297,121 +298,169 @@ i::before {
 /* FOOTER style */
 
 footer {
-    display: block;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: grey;
-    color: white;
-    text-align: center;
+	display: block;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: grey;
+	color: white;
+	text-align: center;
 }
 
 footer p {
-    font-size: 0.8em;
-    font-weight: 200;
-    padding: 0.7em 0;
+	font-size: 0.8em;
+	font-weight: 200;
+	padding: 0.7em 0;
 }
 
 .icon1 {
-    width: 3em;
-    height: 2em;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-bottom: 10px;
+	width: 3em;
+	height: 2em;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
 }
 
 .icon2 {
-    width: 2.7em;
-    height: 1.7em;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-bottom: 10px;
+	width: 2.7em;
+	height: 1.7em;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
 }
 
 /* go TOP button */
 #myBtn {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 20px;
-    /* Place the button at the bottom of the page */
-    right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: darkgrey;
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    cursor: pointer;
-    /* Add a mouse pointer on hover */
-    padding: 15px;
-    /* Some padding */
-    border-radius: 10px;
-    /* Rounded corners */
-    font-size: 18px;
-    /* Increase font size */
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Fixed/sticky position */
+	bottom: 20px;
+	/* Place the button at the bottom of the page */
+	right: 30px;
+	/* Place the button 30px from the right */
+	z-index: 99;
+	/* Make sure it does not overlap */
+	border: none;
+	/* Remove borders */
+	outline: none;
+	/* Remove outline */
+	background-color: darkgrey;
+	/* Set a background color */
+	color: white;
+	/* Text color */
+	cursor: pointer;
+	/* Add a mouse pointer on hover */
+	padding: 15px;
+	/* Some padding */
+	border-radius: 10px;
+	/* Rounded corners */
+	font-size: 18px;
+	/* Increase font size */
 }
 
 #myBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+	background-color: #555;
+	/* Add a dark-grey background on hover */
 }
 
 @media only screen and (min-width: 700px) {
-    header {
-        background-image: url(../img/header.jpg);
-        background-size: cover;
-        background-position: bottom;
-        height: 25em;
-        width: 100%;
-        position: relative;
-    }
+	header {
+		background-image: url(../img/header.jpg);
+		background-size: cover;
+		background-position: bottom;
+		height: 25em;
+		width: 100%;
+		position: relative;
+	}
 
-    .mobile-nav {
-        position: relative;
-        background-color: rgb(0, 0, 0, 0.3);
-        height: 4em;
-    }
+	.mobile-nav {
+		position: relative;
+		background-color: rgb(0, 0, 0, 0.3);
+		height: 4em;
+	}
 
-    .logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -45%);
-        width: 15%;
-    }
+	.logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -45%);
+		width: 15%;
+	}
 
 
-    .menu {
-        display: none;
-    }
+	.menu {
+		display: none;
+	}
 
-    .quote {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        font-size: 2vw;
-        color: red;
-        text-align: center;
-        width: 100%;
-        font-weight: bold;
-        padding: 0 2em;
-    }
+	.quote {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		font-size: 2vw;
+		color: red;
+		text-align: center;
+		width: 100%;
+		font-weight: bold;
+		padding: 0 2em;
+	}
 
-    main {
-        margin: 2em 5em;
-    }
+	main {
+		margin: 2em 5em;
+	}
 
-    .use-nav {
-        margin: 1em 5em;
-    }
+	.use-nav {
+		margin: 1em 5em;
+	}
 
 
 }
+
+#modal {
+	position: fixed;
+	width: 80vw;
+	height: 50vh;
+	background-color: white;
+	top: 10vh;
+	left: 10vw;
+}
+
+.hide {
+	display: none;
+}
+
+.text1 {
+
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: justify;
+	font-family: roboto;
+}
+
+.button {
+	padding: 10px;
+	text-align: center;
+	background-color: red;
+	color: white;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-family: roboto;
+
+}.button2 {
+	padding: 5px;
+	text-align: center;
+	background-color: red;
+	color: white;
+	border-radius: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-family: roboto;
+
+}
+
+
