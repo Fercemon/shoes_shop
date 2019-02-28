@@ -182,6 +182,7 @@ article {
 .use-nav a:hover {
 	opacity: 1;
 	transform: scale(1.1);
+
 }
 
 #all {

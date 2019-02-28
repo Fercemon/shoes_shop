@@ -76,6 +76,7 @@ function displayData(data) {
     clone.querySelector("h3").textContent = data.gsx$price.$t + ", -kr";
     clone.querySelector(".flip-card").id = data.gsx$use.$t;
     clone.querySelector(".stars-inner").style.width = (data.gsx$rate.$t / 5) * 100 + "%"; //to fill the stars depending the rate they have
+
     clone.querySelector("button").addEventListener("click", e=>{
 		console.log(data)
 		document.querySelector("#modal p").textContent = data.gsx$description.$t
@@ -86,6 +87,7 @@ function displayData(data) {
 	order(data);
 
 
+
     main.appendChild(clone);
 }
 
@@ -94,16 +96,16 @@ loadJSON(link); //we call the function to make it run
 
 // to call the function sort() when click
 
-document.querySelector(".filter").addEventListener("click", order);
+//document.querySelector(".filter").addEventListener("click", order);
 
 // to sort the data by ascendent price
 
+/*
 function order(years) {
-    const year = years.gsx$year.$t;
 
-    console.log(year);
+    console.log(years);
 }
-
+*/
 
 //button to get the overlay menu
 
