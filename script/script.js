@@ -76,7 +76,14 @@ function displayData(data) {
     clone.querySelector("h3").textContent = data.gsx$price.$t + ", -kr";
     clone.querySelector(".flip-card").id = data.gsx$use.$t;
     clone.querySelector(".stars-inner").style.width = (data.gsx$rate.$t / 5) * 100 + "%"; //to fill the stars depending the rate they have
-    order(data);
+    clone.querySelector("button").addEventListener("click", e=>{
+		console.log(data)
+		document.querySelector("#modal p").textContent = data.gsx$description.$t
+		document.querySelector("#modal").classList.remove("hide")
+
+	})
+
+	order(data);
 
 
     main.appendChild(clone);
@@ -135,3 +142,9 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+document.querySelector("#modal button").addEventListener("click", e=>{
+		document.querySelector("#modal").classList.add("hide")
+
+	})
