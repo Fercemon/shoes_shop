@@ -346,9 +346,6 @@ i::before {
 
 
 
-
-
-
 /* FOOTER style */
 
 footer {
@@ -486,6 +483,15 @@ footer p {
 
 #modal {
 	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.7);
+	top: 0;
+	left: 0;
+}
+
+.modal-wrapper{
+    position: absolute;
 	width: 80vw;
 	height: 50vh;
 	background-color: white;
@@ -518,7 +524,8 @@ footer p {
 	margin-left: 15px;
 	font-family: roboto;
 
-}.button2 {
+}
+.button2 {
 	padding: 5px;
 	text-align: center;
 	background-color: red;
