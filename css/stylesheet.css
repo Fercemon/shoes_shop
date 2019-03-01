@@ -534,6 +534,7 @@ footer p {
 	margin-top: 15px;
 	margin-left: 15px;
 	font-family: roboto;
+	z-index: 5;
 
 }
 
